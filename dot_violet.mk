@@ -17,7 +17,6 @@ $(call inherit-product, vendor/dot/config/common.mk)
 
 #Official DotOS
 TARGET_BOOT_ANIMATION_RES := 2160
-DOT_OFFICIAL := true
 
 
 # Device identifier. This must come after all inclusions.
