@@ -15,7 +15,10 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 # Inherit some common DotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+#Official DotOS
 TARGET_BOOT_ANIMATION_RES := 2160
+DOT_OFFICIAL := true
+
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_violet
@@ -29,6 +32,7 @@ BUILD_FINGERPRINT := google/taimen/taimen:9/PQ2A.190405.003/5310204:user/release
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="violet-user 9 PKQ1.181203.001 9.5.30 release-keys" \
     PRODUCT_NAME="violet" \
-    TARGET_DEVICE="violet" 
+    TARGET_DEVICE="violet" \
+    DEVICE_MAINTAINERS="Mithil"
 	
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
